@@ -352,11 +352,21 @@ medical-ai-demo/
 
 ## 📸 Screenshots
 
-Screenshots available in `/home/ubuntu/screenshots/`:
-- Landing page with spinning liver
-- Analysis page with upload interface
-- Results page with 3D viewer and demographics
-- Analytics dashboard with charts
+### Landing Page
+![Landing Page](/home/ubuntu/screenshots/localhost_5173_205311.png)
+*Azure AI branded landing page with spinning 3D liver model and executive summary*
+
+### Results - Liver Scan Visualization
+![Results with Visible Liver Medical Imaging Scan](/home/ubuntu/screenshots/localhost_5173_205037.png)
+*Results page showing **VISIBLE grayscale abdominal CT/MRI scan** displaying liver anatomy in the 3D Liver Visualization section, with processing metrics (2.3s, 92% accuracy, 3 AI models)*
+
+### Results - Complete Clinical Analysis
+![Clinical Analysis with Liver Scan](/home/ubuntu/screenshots/localhost_5173_205140.png)
+*Complete clinical analysis showing patient demographics (P0591, 41 years old, Male, African American), liver feature classification (Hepatocellular Carcinoma - Segment VII), tumor segmentation results (liver parenchyma, 3.2cm hepatic tumor, portal vein, hepatic veins all detected), and detailed GPT-5 clinical findings with differential diagnosis and treatment recommendations*
+
+### Analytics Dashboard
+![Analytics Dashboard](/home/ubuntu/screenshots/localhost_5173_205226.png)
+*Comprehensive analytics dashboard with modality distribution, disease types, accuracy over time, and demographics charts*
 
 ## ⚠️ Important Notes
 

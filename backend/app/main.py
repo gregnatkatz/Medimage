@@ -68,18 +68,30 @@ async def upload_demo_image(modality: str = Form(...)):
         if modality not in ["liver-mri", "liver-ct", "ultrasound", "pathology"]:
             raise HTTPException(status_code=400, detail="Invalid modality")
         
-        from PIL import Image, ImageDraw, ImageFont
+        from PIL import Image
+        import nibabel as nib
+        import numpy as np
+        from pathlib import Path
         
-        img = Image.new('RGB', (800, 600), color=(26, 26, 46))
-        draw = ImageDraw.Draw(img)
+        kaggle_data_path = Path(__file__).parent.parent.parent / "data" / "kaggle" / "liver-tumor" / "08-3D-Liver-Tumor-Segmentation" / "08-3D-Liver-Tumor-Segmentation" / "Task03_Liver_rs" / "images"
         
-        text = f"Demo {modality.upper()} Image"
-        bbox = draw.textbbox((0, 0), text)
-        text_width = bbox[2] - bbox[0]
-        text_height = bbox[3] - bbox[1]
-        x = (800 - text_width) / 2
-        y = (600 - text_height) / 2
-        draw.text((x, y), text, fill=(255, 255, 255))
+        nifti_files = list(kaggle_data_path.glob("liver_*.nii"))
+        if not nifti_files:
+            raise HTTPException(status_code=404, detail="No liver scan files found in Kaggle dataset")
+        
+        nifti_file = nifti_files[0]
+        
+        nii_img = nib.load(str(nifti_file))
+        data = nii_img.get_fdata()
+        
+        middle_slice = data.shape[2] // 2
+        slice_data = data[:, :, middle_slice]
+        
+        slice_normalized = ((slice_data - slice_data.min()) / (slice_data.max() - slice_data.min()) * 255).astype(np.uint8)
+        
+        img = Image.fromarray(slice_normalized, mode='L')
+        img = img.convert('RGB')
+        img = img.resize((800, 600), Image.Resampling.LANCZOS)
         
         buffered = BytesIO()
         img.save(buffered, format="PNG")
@@ -87,10 +99,12 @@ async def upload_demo_image(modality: str = Form(...)):
         
         return {
             "success": True,
-            "message": f"Demo image loaded for {modality}",
+            "message": f"Demo liver scan loaded from Kaggle dataset ({nifti_file.name})",
             "imageUrl": f"data:image/png;base64,{img_str}"
         }
     
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Demo load failed: {str(e)}")
 

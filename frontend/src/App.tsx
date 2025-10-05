@@ -476,9 +476,6 @@ function App() {
                           3D Liver Visualization
                         </h3>
                         <Liver3DViewer imageUrl={safeUploadedImage!} darkMode={darkMode} />
-                        <p className={`text-sm mt-3 text-center ${darkMode ? 'text-gray-400' : 'text-slate-600'}`}>
-                          Drag to rotate • Scroll to zoom • Hover to pause auto-rotation
-                        </p>
                       </div>
                     )}
 
