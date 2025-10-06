@@ -196,7 +196,6 @@ function App() {
     
     setProcessing(true)
     setAnalysisStep(0)
-    setActiveTab('results')
 
     try {
       const blob = dataURLtoBlob(safeUploadedImage!)
@@ -221,6 +220,7 @@ function App() {
 
       const result = await analysisResponse.json()
       setResults(result.data)
+      setActiveTab('results')
       setAnalysisStep(4)
     } catch (error) {
       console.error('Analysis error:', error)
