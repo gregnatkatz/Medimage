@@ -72,36 +72,97 @@ async def upload_demo_image(modality: str = Form(...)):
         import nibabel as nib
         import numpy as np
         from pathlib import Path
+        import random
         
-        kaggle_data_path = Path(__file__).parent.parent.parent / "data" / "kaggle" / "liver-tumor" / "08-3D-Liver-Tumor-Segmentation" / "08-3D-Liver-Tumor-Segmentation" / "Task03_Liver_rs" / "images"
+        organized_data_path = Path(__file__).parent.parent.parent / "data" / "organized" / "demo"
         
-        nifti_files = list(kaggle_data_path.glob("liver_*.nii"))
-        if not nifti_files:
-            raise HTTPException(status_code=404, detail="No liver scan files found in Kaggle dataset")
+        if modality == "liver-ct":
+            ct_path = organized_data_path / "ct"
+            patient_dirs = [d for d in ct_path.iterdir() if d.is_dir()]
+            if not patient_dirs:
+                raise HTTPException(status_code=404, detail="No CT demo data found")
+            
+            patient_dir = random.choice(patient_dirs)
+            dicom_dir = patient_dir / "DICOM_anon"
+            
+            if dicom_dir.exists():
+                dicom_files = list(dicom_dir.glob("*.dcm"))
+                if dicom_files:
+                    import pydicom
+                    dcm = pydicom.dcmread(str(dicom_files[len(dicom_files)//2]))
+                    slice_data = dcm.pixel_array
+                    
+                    slice_normalized = ((slice_data - slice_data.min()) / (slice_data.max() - slice_data.min()) * 255).astype(np.uint8)
+                    img = Image.fromarray(slice_normalized, mode='L').convert('RGB')
+                    img = img.resize((800, 600), Image.Resampling.LANCZOS)
+                    
+                    buffered = BytesIO()
+                    img.save(buffered, format="PNG")
+                    img_str = base64.b64encode(buffered.getvalue()).decode()
+                    
+                    return {
+                        "success": True,
+                        "message": f"Demo CT scan loaded (Patient {patient_dir.name})",
+                        "imageUrl": f"data:image/png;base64,{img_str}"
+                    }
         
-        nifti_file = nifti_files[0]
+        elif modality == "liver-mri":
+            mri_path = organized_data_path / "mri"
+            patient_dirs = [d for d in mri_path.iterdir() if d.is_dir()]
+            if not patient_dirs:
+                raise HTTPException(status_code=404, detail="No MRI demo data found")
+            
+            patient_dir = random.choice(patient_dirs)
+            t2spir_dir = patient_dir / "T2SPIR" / "DICOM_anon"
+            
+            if t2spir_dir.exists():
+                dicom_files = list(t2spir_dir.glob("*.dcm"))
+                if dicom_files:
+                    import pydicom
+                    dcm = pydicom.dcmread(str(dicom_files[len(dicom_files)//2]))
+                    slice_data = dcm.pixel_array
+                    
+                    slice_normalized = ((slice_data - slice_data.min()) / (slice_data.max() - slice_data.min()) * 255).astype(np.uint8)
+                    img = Image.fromarray(slice_normalized, mode='L').convert('RGB')
+                    img = img.resize((800, 600), Image.Resampling.LANCZOS)
+                    
+                    buffered = BytesIO()
+                    img.save(buffered, format="PNG")
+                    img_str = base64.b64encode(buffered.getvalue()).decode()
+                    
+                    return {
+                        "success": True,
+                        "message": f"Demo MRI scan loaded (Patient {patient_dir.name})",
+                        "imageUrl": f"data:image/png;base64,{img_str}"
+                    }
         
-        nii_img = nib.load(str(nifti_file))
-        data = nii_img.get_fdata()
+        elif modality == "ultrasound":
+            ultrasound_path = organized_data_path / "ultrasound"
+            categories = ["Benign", "Malignant", "Normal"]
+            category = random.choice(categories)
+            category_path = ultrasound_path / category
+            
+            if category_path.exists():
+                image_files = list(category_path.glob("*.jpg"))
+                if image_files:
+                    img_file = random.choice(image_files)
+                    img = Image.open(img_file).convert('RGB')
+                    img = img.resize((800, 600), Image.Resampling.LANCZOS)
+                    
+                    buffered = BytesIO()
+                    img.save(buffered, format="PNG")
+                    img_str = base64.b64encode(buffered.getvalue()).decode()
+                    
+                    return {
+                        "success": True,
+                        "message": f"Demo ultrasound image loaded ({category}: {img_file.name})",
+                        "imageUrl": f"data:image/png;base64,{img_str}"
+                    }
         
-        middle_slice = data.shape[2] // 2
-        slice_data = data[:, :, middle_slice]
+        elif modality == "pathology":
+            raise HTTPException(status_code=404, detail="Pathology demo data not available (no suitable Kaggle datasets found)")
         
-        slice_normalized = ((slice_data - slice_data.min()) / (slice_data.max() - slice_data.min()) * 255).astype(np.uint8)
-        
-        img = Image.fromarray(slice_normalized, mode='L')
-        img = img.convert('RGB')
-        img = img.resize((800, 600), Image.Resampling.LANCZOS)
-        
-        buffered = BytesIO()
-        img.save(buffered, format="PNG")
-        img_str = base64.b64encode(buffered.getvalue()).decode()
-        
-        return {
-            "success": True,
-            "message": f"Demo liver scan loaded from Kaggle dataset ({nifti_file.name})",
-            "imageUrl": f"data:image/png;base64,{img_str}"
-        }
+        raise HTTPException(status_code=404, detail=f"No demo data found for {modality}")
     
     except HTTPException:
         raise
