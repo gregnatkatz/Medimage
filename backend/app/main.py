@@ -63,6 +63,53 @@ async def get_config():
         "supportedModalities": ["liver-mri", "liver-ct", "ultrasound", "pathology"]
     }
 
+@app.get("/api/patients")
+async def list_patients(modality: str):
+    """List all patients for a given modality"""
+    try:
+        from pathlib import Path
+        
+        if modality not in ["liver-mri", "liver-ct", "ultrasound"]:
+            raise HTTPException(status_code=400, detail="Invalid modality")
+        
+        organized_data_path = Path(__file__).parent.parent.parent / "data" / "organized" / "demo"
+        patients_file = organized_data_path / "patients.json"
+        
+        if not patients_file.exists():
+            raise HTTPException(status_code=404, detail="Patient data not found")
+        
+        with open(patients_file, 'r') as f:
+            all_patients = json.load(f)
+        
+        prefix_map = {
+            "liver-ct": "CT-",
+            "liver-mri": "MRI-",
+            "ultrasound": "US-"
+        }
+        prefix = prefix_map[modality]
+        
+        filtered_patients = [
+            {
+                "patient_id": pid,
+                "name": pdata.get("name", "Unknown"),
+                "age": pdata.get("age", 0),
+                "gender": pdata.get("gender", "Unknown"),
+                "medical_background": pdata.get("medical_background", "")
+            }
+            for pid, pdata in all_patients.items()
+            if pid.startswith(prefix)
+        ]
+        
+        return {
+            "success": True,
+            "patients": filtered_patients
+        }
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to list patients: {str(e)}")
+
 @app.post("/api/analyze")
 async def analyze_image(
     image: UploadFile = File(...),
@@ -92,8 +139,8 @@ async def analyze_image(
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
 @app.post("/api/upload-demo")
-async def upload_demo_image(modality: str = Form(...)):
-    """Load a demo image for the specified modality"""
+async def upload_demo_image(modality: str = Form(...), patient_id: Optional[str] = Form(None)):
+    """Load a demo image for the specified modality and optional patient"""
     try:
         if modality not in ["liver-mri", "liver-ct", "ultrasound", "pathology"]:
             raise HTTPException(status_code=400, detail="Invalid modality")
@@ -106,13 +153,28 @@ async def upload_demo_image(modality: str = Form(...)):
         
         organized_data_path = Path(__file__).parent.parent.parent / "data" / "organized" / "demo"
         
+        patients_file = organized_data_path / "patients.json"
+        if patient_id and patients_file.exists():
+            with open(patients_file, 'r') as f:
+                all_patients = json.load(f)
+            
+            if patient_id not in all_patients:
+                raise HTTPException(status_code=404, detail=f"Patient {patient_id} not found")
+        
         if modality == "liver-ct":
             ct_path = organized_data_path / "ct"
             patient_dirs = [d for d in ct_path.iterdir() if d.is_dir()]
             if not patient_dirs:
                 raise HTTPException(status_code=404, detail="No CT demo data found")
             
-            patient_dir = random.choice(patient_dirs)
+            if patient_id:
+                patient_data = all_patients[patient_id]
+                patient_dir_name = patient_data["image_directory"].split("/")[1]
+                patient_dir = ct_path / patient_dir_name
+                if not patient_dir.exists():
+                    raise HTTPException(status_code=404, detail="Patient directory not found")
+            else:
+                patient_dir = random.choice(patient_dirs)
             dicom_dir = patient_dir / "DICOM_anon"
             
             if dicom_dir.exists():
@@ -145,7 +207,14 @@ async def upload_demo_image(modality: str = Form(...)):
             if not patient_dirs:
                 raise HTTPException(status_code=404, detail="No MRI demo data found")
             
-            patient_dir = random.choice(patient_dirs)
+            if patient_id:
+                patient_data = all_patients[patient_id]
+                patient_dir_name = patient_data["image_directory"].split("/")[1]
+                patient_dir = mri_path / patient_dir_name
+                if not patient_dir.exists():
+                    raise HTTPException(status_code=404, detail="Patient directory not found")
+            else:
+                patient_dir = random.choice(patient_dirs)
             t2spir_dir = patient_dir / "T2SPIR" / "DICOM_anon"
             
             if t2spir_dir.exists():
@@ -174,29 +243,52 @@ async def upload_demo_image(modality: str = Form(...)):
         
         elif modality == "ultrasound":
             ultrasound_path = organized_data_path / "ultrasound"
-            categories = ["Benign", "Malignant", "Normal"]
-            category = random.choice(categories)
-            category_path = ultrasound_path / category
             
-            if category_path.exists():
+            if patient_id:
+                patient_data = all_patients[patient_id]
+                if "images" not in patient_data or not patient_data["images"]:
+                    raise HTTPException(status_code=404, detail="No images found for patient")
+                
+                img_path_rel = patient_data["images"][0]
+                img_file = organized_data_path / img_path_rel
+                
+                if not img_file.exists():
+                    raise HTTPException(status_code=404, detail="Patient image file not found")
+            else:
+                categories = ["Benign", "Malignant", "Normal"]
+                category = random.choice(categories)
+                category_path = ultrasound_path / category
+                
+                if not category_path.exists():
+                    raise HTTPException(status_code=404, detail="Ultrasound category not found")
+                
                 image_files = list(category_path.glob("*.jpg"))
-                if image_files:
-                    img_file = random.choice(image_files)
-                    img = Image.open(img_file).convert('RGB')
-                    img = img.resize((800, 600), Image.Resampling.LANCZOS)
-                    
-                    buffered = BytesIO()
-                    img.save(buffered, format="PNG")
-                    img_str = base64.b64encode(buffered.getvalue()).decode()
-                    
+                if not image_files:
+                    raise HTTPException(status_code=404, detail="No ultrasound images found")
+                
+                img_file = random.choice(image_files)
+            
+            if img_file.exists():
+                img = Image.open(img_file).convert('RGB')
+                img = img.resize((800, 600), Image.Resampling.LANCZOS)
+                
+                buffered = BytesIO()
+                img.save(buffered, format="PNG")
+                img_str = base64.b64encode(buffered.getvalue()).decode()
+                
+                if not patient_id:
                     patient_data = load_patient_data(organized_data_path, "ultrasound", img_file.name)
-                    
-                    return {
-                        "success": True,
-                        "message": f"Demo ultrasound image loaded ({category}: {img_file.name})",
-                        "imageUrl": f"data:image/png;base64,{img_str}",
-                        "patientData": patient_data
-                    }
+                else:
+                    patient_data = all_patients[patient_id]
+                
+                category = "Selected Patient" if patient_id else category if 'category' in locals() else "Unknown"
+                
+                return {
+                    "success": True,
+                    "message": f"Demo ultrasound image loaded ({category}: {img_file.name})",
+                    "imageUrl": f"data:image/png;base64,{img_str}",
+                    "patientData": patient_data
+                }
         
         elif modality == "pathology":
             raise HTTPException(status_code=404, detail="Pathology demo data not available (no suitable Kaggle datasets found)")

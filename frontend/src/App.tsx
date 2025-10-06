@@ -68,6 +68,9 @@ function App() {
   const [results, setResults] = useState<AnalysisResult | null>(null)
   const [activeTab, setActiveTab] = useState('upload')
   const [useMockData, setUseMockData] = useState(true)
+  const [availablePatients, setAvailablePatients] = useState<Array<{patient_id: string, name: string, age: number, gender: string, medical_background: string}>>([])
+  const [selectedPatientId, setSelectedPatientId] = useState<string>('')
+  const [loadingPatients, setLoadingPatients] = useState(false)
   const ensureDataUrlPrefix = (url: string | null): string | null => {
     if (!url) return null
     if (url.startsWith('data:')) return url
@@ -86,6 +89,33 @@ function App() {
       .then(data => setUseMockData(data.useMockData))
       .catch(err => console.error('Config fetch error:', err))
   }, [])
+
+  useEffect(() => {
+    const fetchPatients = async () => {
+      if (!['liver-mri', 'liver-ct', 'ultrasound'].includes(selectedModality)) {
+        setAvailablePatients([])
+        setSelectedPatientId('')
+        return
+      }
+      
+      setLoadingPatients(true)
+      try {
+        const response = await fetch(`${API_URL}/api/patients?modality=${selectedModality}`)
+        const data = await response.json()
+        if (data.success) {
+          setAvailablePatients(data.patients)
+          setSelectedPatientId('')
+        }
+      } catch (error) {
+        console.error('Failed to fetch patients:', error)
+        setAvailablePatients([])
+      } finally {
+        setLoadingPatients(false)
+      }
+    }
+    
+    fetchPatients()
+  }, [selectedModality])
 
   if (currentPage === 'landing') {
     return <LandingPage darkMode={darkMode} onEnter={() => setCurrentPage('analysis')} />
@@ -127,6 +157,9 @@ function App() {
     try {
       const formData = new FormData()
       formData.append('modality', selectedModality)
+      if (selectedPatientId) {
+        formData.append('patient_id', selectedPatientId)
+      }
       
       const response = await fetch(`${API_URL}/api/upload-demo`, {
         method: 'POST',
@@ -335,17 +368,66 @@ function App() {
                   />
                 </div>
 
-                <div className="text-center">
-                  <p className={`mb-3 ${darkMode ? 'text-gray-400' : 'text-slate-600'}`}>or</p>
-                  <Button
-                    onClick={loadDemoImage}
-                    variant="outline"
-                    className={darkMode ? 'border-blue-400 text-blue-400 hover:bg-blue-900/30' : 'border-blue-600 text-blue-600'}
-                  >
-                    <FileImage className="h-4 w-4 mr-2" />
-                    Load Demo {selectedModality.toUpperCase()} Image
-                  </Button>
-                </div>
+                {['liver-mri', 'liver-ct', 'ultrasound'].includes(selectedModality) && (
+                  <>
+                    <div className="text-center">
+                      <p className={`mb-3 ${darkMode ? 'text-gray-400' : 'text-slate-600'}`}>or</p>
+                    </div>
+
+                    <div className={`p-4 rounded-xl ${darkMode ? 'bg-slate-900/50' : 'bg-slate-50'}`}>
+                      <label className={`block text-sm font-medium mb-2 ${darkMode ? 'text-gray-300' : 'text-slate-700'}`}>
+                        Select a Demo Patient
+                      </label>
+                      <select
+                        value={selectedPatientId}
+                        onChange={(e) => setSelectedPatientId(e.target.value)}
+                        disabled={loadingPatients}
+                        className={`w-full p-3 rounded-lg border ${
+                          darkMode 
+                            ? 'bg-slate-800 border-slate-600 text-white' 
+                            : 'bg-white border-slate-300 text-slate-900'
+                        } ${loadingPatients ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+                      >
+                        <option value="">
+                          {loadingPatients ? 'Loading patients...' : 'Random Patient (Default)'}
+                        </option>
+                        {availablePatients.map((patient) => (
+                          <option key={patient.patient_id} value={patient.patient_id}>
+                            {patient.name} - {patient.age}y, {patient.gender} - {patient.medical_background.split('.')[0]}
+                          </option>
+                        ))}
+                      </select>
+                      <p className={`text-xs mt-2 ${darkMode ? 'text-gray-500' : 'text-slate-500'}`}>
+                        Select a specific patient or leave blank for random selection
+                      </p>
+                    </div>
+
+                    <div className="text-center mt-4">
+                      <Button
+                        onClick={loadDemoImage}
+                        variant="outline"
+                        className={darkMode ? 'border-blue-400 text-blue-400 hover:bg-blue-900/30' : 'border-blue-600 text-blue-600'}
+                      >
+                        <FileImage className="h-4 w-4 mr-2" />
+                        Load {selectedPatientId ? 'Selected Patient' : 'Demo'} Image
+                      </Button>
+                    </div>
+                  </>
+                )}
+
+                {selectedModality === 'pathology' && (
+                  <div className="text-center">
+                    <p className={`mb-3 ${darkMode ? 'text-gray-400' : 'text-slate-600'}`}>or</p>
+                    <Button
+                      onClick={loadDemoImage}
+                      variant="outline"
+                      className={darkMode ? 'border-blue-400 text-blue-400 hover:bg-blue-900/30' : 'border-blue-600 text-blue-600'}
+                    >
+                      <FileImage className="h-4 w-4 mr-2" />
+                      Load Demo {selectedModality.toUpperCase()} Image
+                    </Button>
+                  </div>
+                )}
 
                 {safeUploadedImage && (
                   <div className={`mt-6 p-4 rounded-xl ${darkMode ? 'bg-slate-900/50' : 'bg-slate-50'}`}>
