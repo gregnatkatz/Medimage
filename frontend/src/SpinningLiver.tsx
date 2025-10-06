@@ -60,15 +60,16 @@ function LiverWithTumor() {
 
 export default function SpinningLiver({ darkMode }: SpinningLiverProps) {
   return (
-    <div className="w-[400px] h-[400px] rounded-xl overflow-hidden border-2 border-blue-500/30">
+    <div className="w-[700px] h-[700px] rounded-xl overflow-hidden border-4 border-blue-500/40 shadow-2xl">
       <Canvas
         camera={{ position: [0, 0, 8], fov: 50 }}
-        style={{ background: darkMode ? '#1a1a2e' : '#f0f4f8' }}
+        style={{ background: darkMode ? '#0f172a' : '#dbeafe' }}
       >
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[10, 10, 5]} intensity={1} />
-        <directionalLight position={[-10, -10, -5]} intensity={0.5} />
-        <pointLight position={[5, 5, 5]} intensity={0.5} color="#ffffff" />
+        <ambientLight intensity={0.7} />
+        <directionalLight position={[10, 10, 5]} intensity={1.2} />
+        <directionalLight position={[-10, -10, -5]} intensity={0.6} />
+        <pointLight position={[5, 5, 5]} intensity={0.7} color="#60a5fa" />
+        <pointLight position={[-5, -5, -5]} intensity={0.4} color="#3b82f6" />
         
         <LiverWithTumor />
         
@@ -76,7 +77,8 @@ export default function SpinningLiver({ darkMode }: SpinningLiverProps) {
           enablePan={false}
           enableZoom={true}
           enableRotate={true}
-          autoRotate={false}
+          autoRotate={true}
+          autoRotateSpeed={2}
           minDistance={5}
           maxDistance={12}
         />
