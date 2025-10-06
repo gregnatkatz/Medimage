@@ -73,7 +73,7 @@ async def upload_demo_image(modality: str = Form(...)):
         import numpy as np
         from pathlib import Path
         
-        kaggle_data_path = Path(__file__).parent.parent.parent / "data" / "kaggle" / "liver-tumor" / "08-3D-Liver-Tumor-Segmentation" / "08-3D-Liver-Tumor-Segmentation" / "Task03_Liver_rs" / "images"
+        kaggle_data_path = Path(__file__).parent.parent.parent / "data" / "kaggle" / "liver-tumor" / "Task03_Liver_rs" / "images"
         
         nifti_files = list(kaggle_data_path.glob("liver_*.nii"))
         if not nifti_files:

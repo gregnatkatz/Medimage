@@ -8,6 +8,61 @@ A comprehensive medical imaging AI demonstration platform focused on liver disea
 
 This platform demonstrates advanced AI capabilities for liver disease detection and analysis using Microsoft Azure AI Foundry services integrated with state-of-the-art medical imaging models including BiomedParse, MedImageParse, MedImageInsight, and GPT-5.
 
+## 📥 Kaggle Dataset Setup
+
+This application requires Kaggle liver imaging datasets for testing and demonstration. **Do not commit these large dataset files to the repository.**
+
+### Download Instructions
+
+1. **Install Kaggle CLI:**
+```bash
+pip install kaggle
+```
+
+2. **Configure Kaggle credentials:**
+   - Go to [Kaggle Account Settings](https://www.kaggle.com/settings)
+   - Click "Create New API Token" to download `kaggle.json`
+   - Place it in `~/.kaggle/kaggle.json` and set permissions:
+```bash
+mkdir -p ~/.kaggle
+mv ~/Downloads/kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+```
+
+3. **Download the dataset:**
+```bash
+cd data/kaggle
+kaggle datasets download -d andrewmvd/liver-tumor-segmentation
+unzip liver-tumor-segmentation.zip
+```
+
+4. **Organize the data:**
+```bash
+mkdir -p Task03_Liver_rs/images
+cd volume_pt1
+for f in volume-*.nii; do cp "$f" "../Task03_Liver_rs/images/liver_${f#volume-}"; done
+```
+
+The final structure should be:
+```
+data/
+└── kaggle/
+    └── liver-tumor/
+        └── Task03_Liver_rs/
+            └── images/
+                ├── liver_0.nii
+                ├── liver_1.nii
+                └── ...
+```
+
+### Dataset Information
+- **Size:** ~5.2 GB
+- **Format:** NIfTI (.nii) 3D medical imaging volumes
+- **Source:** [Kaggle - Liver Tumor Segmentation](https://www.kaggle.com/datasets/andrewmvd/liver-tumor-segmentation)
+- **License:** Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+
+
+
 ### Current Features (Implemented ✅)
 
 - **Landing Page**: Professional entry point with Azure AI branding, spinning 3D liver model with highlighted tumor, and executive summary
@@ -137,6 +192,71 @@ This platform integrates 5 specialized Azure AI models, each serving a distinct 
 Input Image
     ↓
 MedImageInsight → [Embeddings & Initial Classification]
+
+## 🔄 Configuration
+
+The application supports two modes:
+
+- **Mock Mode (Default)**: Uses simulated AI responses for testing
+- **Production Mode**: Connects to real Azure AI services
+
+Configure via `backend/.env`:
+
+```bash
+# Toggle between mock and real AI services
+USE_MOCK_DATA=true  # Set to false for production mode
+
+# Azure Authentication
+AZURE_TENANT_ID=your_tenant_id
+AZURE_CLIENT_ID=your_client_id
+AZURE_CLIENT_SECRET=your_client_secret
+
+# Azure OpenAI Configuration
+AZURE_OPENAI_ENDPOINT=your_endpoint
+AZURE_OPENAI_API_KEY=your_api_key
+AZURE_OPENAI_API_VERSION=2025-01-01-preview
+AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4.1
+
+# Azure ML Medical Imaging Endpoint
+AZURE_ML_ENDPOINT=your_ml_endpoint
+AZURE_ML_API_KEY=your_ml_api_key
+
+# Medical Imaging Model Deployments
+MEDIMAGEPARSE_DEPLOYMENT=medimageparse-deployment
+MEDIMAGEINSIGHT_DEPLOYMENT=medimageinsight-deployment
+MEDIMAGEPARSE3D_DEPLOYMENT=medimageparse3d
+```
+
+## 🚀 Switching to Real Azure AI Endpoints
+
+Once the Azure ML endpoint is fully deployed, switch from mock to real endpoints:
+
+1. **Run the deployment script** (wait for confirmation that endpoint is ready):
+```bash
+python deploy_medical_models.py
+```
+
+2. **Update backend/.env**:
+```bash
+USE_MOCK_DATA=false
+```
+
+3. **Restart the backend**:
+```bash
+cd backend
+poetry run fastapi dev app/main.py
+```
+
+4. **Verify real endpoint is active**:
+```bash
+curl http://localhost:8000/healthz
+```
+
+Expected response should show `"mode": "production"` instead of `"mode": "mock"`.
+
+5. **Test with real medical imaging analysis** by uploading images through the frontend.
+
+
     ↓
 MedImageParse 2D/3D + BiomedParse → [Detailed Segmentation]
     ↓
