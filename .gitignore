@@ -62,6 +62,7 @@ dist-ssr/
 
 # Data (large Kaggle datasets)
 data/
+!data/organized/**/patients.json
 *.nii
 *.nii.gz
 data/kaggle/*.zip

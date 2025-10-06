@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 import base64
+import json
 from io import BytesIO
 
 from app.config import settings
@@ -24,6 +25,35 @@ async def healthz():
         "mode": "mock" if settings.USE_MOCK_DATA else "production",
         "version": "1.0.0"
     }
+
+def load_patient_data(organized_data_path, modality: str, patient_identifier: str) -> Optional[dict]:
+    """Load patient data from patients.json"""
+    try:
+        from pathlib import Path
+        patients_file = Path(organized_data_path) / "patients.json"
+        if not patients_file.exists():
+            return None
+        
+        with open(patients_file, 'r') as f:
+            patients = json.load(f)
+        
+        if modality in ["liver-ct", "liver-mri"]:
+            prefix = "CT" if modality == "liver-ct" else "MRI"
+            for patient_id, patient_data in patients.items():
+                if patient_id.startswith(prefix) and patient_identifier in patient_data.get("image_directory", ""):
+                    return patient_data
+        
+        elif modality == "ultrasound":
+            for patient_id, patient_data in patients.items():
+                if "images" in patient_data:
+                    for img_path in patient_data["images"]:
+                        if patient_identifier in img_path:
+                            return patient_data
+        
+        return None
+    except Exception as e:
+        print(f"Error loading patient data: {e}")
+        return None
 
 @app.get("/api/config")
 async def get_config():
@@ -100,10 +130,13 @@ async def upload_demo_image(modality: str = Form(...)):
                     img.save(buffered, format="PNG")
                     img_str = base64.b64encode(buffered.getvalue()).decode()
                     
+                    patient_data = load_patient_data(organized_data_path, "liver-ct", patient_dir.name)
+                    
                     return {
                         "success": True,
                         "message": f"Demo CT scan loaded (Patient {patient_dir.name})",
-                        "imageUrl": f"data:image/png;base64,{img_str}"
+                        "imageUrl": f"data:image/png;base64,{img_str}",
+                        "patientData": patient_data
                     }
         
         elif modality == "liver-mri":
@@ -130,10 +163,13 @@ async def upload_demo_image(modality: str = Form(...)):
                     img.save(buffered, format="PNG")
                     img_str = base64.b64encode(buffered.getvalue()).decode()
                     
+                    patient_data = load_patient_data(organized_data_path, "liver-mri", patient_dir.name)
+                    
                     return {
                         "success": True,
                         "message": f"Demo MRI scan loaded (Patient {patient_dir.name})",
-                        "imageUrl": f"data:image/png;base64,{img_str}"
+                        "imageUrl": f"data:image/png;base64,{img_str}",
+                        "patientData": patient_data
                     }
         
         elif modality == "ultrasound":
@@ -153,10 +189,13 @@ async def upload_demo_image(modality: str = Form(...)):
                     img.save(buffered, format="PNG")
                     img_str = base64.b64encode(buffered.getvalue()).decode()
                     
+                    patient_data = load_patient_data(organized_data_path, "ultrasound", img_file.name)
+                    
                     return {
                         "success": True,
                         "message": f"Demo ultrasound image loaded ({category}: {img_file.name})",
-                        "imageUrl": f"data:image/png;base64,{img_str}"
+                        "imageUrl": f"data:image/png;base64,{img_str}",
+                        "patientData": patient_data
                     }
         
         elif modality == "pathology":

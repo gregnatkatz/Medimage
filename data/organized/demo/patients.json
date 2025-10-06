@@ -1,0 +1,2015 @@
+{
+  "CT-DEMO-18": {
+    "patient_id": "CT-DEMO-18",
+    "name": "Luis Hernandez",
+    "age": 59,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: History of blood transfusions, Chronic alcohol use.",
+    "study_date": "2025-06-09",
+    "image_directory": "ct/18"
+  },
+  "CT-DEMO-19": {
+    "patient_id": "CT-DEMO-19",
+    "name": "Michael Warren",
+    "age": 58,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Metabolic syndrome. Elevated ALT/AST.",
+    "study_date": "2024-03-24",
+    "image_directory": "ct/19"
+  },
+  "CT-DEMO-2": {
+    "patient_id": "CT-DEMO-2",
+    "name": "Jennifer Smith",
+    "age": 75,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Non-Alcoholic Steatohepatitis (NASH). Risk factors: Family history of liver disease.",
+    "study_date": "2024-06-14",
+    "image_directory": "ct/2"
+  },
+  "CT-DEMO-23": {
+    "patient_id": "CT-DEMO-23",
+    "name": "Tracy Braun",
+    "age": 53,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Cirrhosis (Alcoholic). Risk factors: Hepatitis B vaccination history, Obesity (BMI > 30). Elevated ALT/AST.",
+    "study_date": "2025-09-04",
+    "image_directory": "ct/23"
+  },
+  "CT-DEMO-24": {
+    "patient_id": "CT-DEMO-24",
+    "name": "Michael Brady",
+    "age": 65,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatitis C Chronic Infection. Risk factors: Hepatitis B vaccination history. Elevated ALT/AST.",
+    "study_date": "2024-05-27",
+    "image_directory": "ct/24"
+  },
+  "CT-DEMO-26": {
+    "patient_id": "CT-DEMO-26",
+    "name": "Alexander Zimmerman",
+    "age": 77,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: History of blood transfusions, Chronic alcohol use. Elevated ALT/AST.",
+    "study_date": "2025-01-17",
+    "image_directory": "ct/26"
+  },
+  "CT-DEMO-27": {
+    "patient_id": "CT-DEMO-27",
+    "name": "Jennifer Rubio",
+    "age": 50,
+    "gender": "Female",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Hepatitis B Chronic Infection. Risk factors: Chronic alcohol use. Elevated ALT/AST.",
+    "study_date": "2025-02-25",
+    "image_directory": "ct/27"
+  },
+  "CT-DEMO-28": {
+    "patient_id": "CT-DEMO-28",
+    "name": "Holly Fuller",
+    "age": 36,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Hepatitis B Chronic Infection. Risk factors: Previous hepatitis infection, Chronic alcohol use. Elevated ALT/AST.",
+    "study_date": "2025-05-02",
+    "image_directory": "ct/28"
+  },
+  "CT-DEMO-29": {
+    "patient_id": "CT-DEMO-29",
+    "name": "Evelyn Holland",
+    "age": 56,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Obesity (BMI > 30), History of blood transfusions. Elevated ALT/AST.",
+    "study_date": "2024-01-10",
+    "image_directory": "ct/29"
+  },
+  "CT-DEMO-5": {
+    "patient_id": "CT-DEMO-5",
+    "name": "Michelle Johnston MD",
+    "age": 82,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Primary Biliary Cholangitis. Risk factors: Obesity (BMI > 30).",
+    "study_date": "2025-04-07",
+    "image_directory": "ct/5"
+  },
+  "CT-DEMO-6": {
+    "patient_id": "CT-DEMO-6",
+    "name": "Sean Bautista",
+    "age": 52,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Primary Biliary Cholangitis. Risk factors: Hepatitis B vaccination history, Type 2 Diabetes Mellitus.",
+    "study_date": "2024-04-26",
+    "image_directory": "ct/6"
+  },
+  "CT-DEMO-8": {
+    "patient_id": "CT-DEMO-8",
+    "name": "Emily Evans",
+    "age": 78,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Chronic alcohol use, Family history of liver disease.",
+    "study_date": "2023-10-29",
+    "image_directory": "ct/8"
+  },
+  "MRI-DEMO-19": {
+    "patient_id": "MRI-DEMO-19",
+    "name": "Jade Ramirez",
+    "age": 55,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatitis B Chronic Infection. Risk factors: Type 2 Diabetes Mellitus. Elevated ALT/AST.",
+    "study_date": "2024-01-18",
+    "image_directory": "mri/19"
+  },
+  "MRI-DEMO-2": {
+    "patient_id": "MRI-DEMO-2",
+    "name": "Erin Anderson",
+    "age": 46,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Cirrhosis (Viral Hepatitis C). Risk factors: Chronic alcohol use, History of blood transfusions. Elevated ALT/AST.",
+    "study_date": "2023-10-09",
+    "image_directory": "mri/2"
+  },
+  "MRI-DEMO-20": {
+    "patient_id": "MRI-DEMO-20",
+    "name": "Sara Bryan",
+    "age": 57,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Obesity (BMI > 30), Type 2 Diabetes Mellitus. Elevated ALT/AST.",
+    "study_date": "2024-09-30",
+    "image_directory": "mri/20"
+  },
+  "MRI-DEMO-3": {
+    "patient_id": "MRI-DEMO-3",
+    "name": "Kristi Foster",
+    "age": 49,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Non-Alcoholic Steatohepatitis (NASH). Risk factors: Metabolic syndrome, Hepatitis B vaccination history.",
+    "study_date": "2025-07-01",
+    "image_directory": "mri/3"
+  },
+  "MRI-DEMO-31": {
+    "patient_id": "MRI-DEMO-31",
+    "name": "Linda Brooks",
+    "age": 69,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Primary Biliary Cholangitis. Risk factors: Family history of liver disease.",
+    "study_date": "2025-08-22",
+    "image_directory": "mri/31"
+  },
+  "MRI-DEMO-33": {
+    "patient_id": "MRI-DEMO-33",
+    "name": "Mark Wolfe",
+    "age": 50,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Chronic alcohol use.",
+    "study_date": "2025-07-03",
+    "image_directory": "mri/33"
+  },
+  "MRI-DEMO-34": {
+    "patient_id": "MRI-DEMO-34",
+    "name": "Curtis Richards",
+    "age": 74,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Primary Biliary Cholangitis. Risk factors: Chronic alcohol use.",
+    "study_date": "2025-04-07",
+    "image_directory": "mri/34"
+  },
+  "MRI-DEMO-36": {
+    "patient_id": "MRI-DEMO-36",
+    "name": "Olivia Maxwell",
+    "age": 35,
+    "gender": "Female",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Previous hepatitis infection, Type 2 Diabetes Mellitus.",
+    "study_date": "2025-02-21",
+    "image_directory": "mri/36"
+  },
+  "MRI-DEMO-37": {
+    "patient_id": "MRI-DEMO-37",
+    "name": "Jessica Nichols",
+    "age": 52,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Previous hepatitis infection, History of blood transfusions.",
+    "study_date": "2024-05-10",
+    "image_directory": "mri/37"
+  },
+  "MRI-DEMO-39": {
+    "patient_id": "MRI-DEMO-39",
+    "name": "Julia Warner",
+    "age": 57,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: History of blood transfusions, Family history of liver disease. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-07-24",
+    "image_directory": "mri/39"
+  },
+  "MRI-DEMO-5": {
+    "patient_id": "MRI-DEMO-5",
+    "name": "David Kidd",
+    "age": 41,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Cirrhosis (Viral Hepatitis C). Risk factors: Metabolic syndrome, Obesity (BMI > 30). Elevated ALT/AST.",
+    "study_date": "2024-07-28",
+    "image_directory": "mri/5"
+  },
+  "MRI-DEMO-8": {
+    "patient_id": "MRI-DEMO-8",
+    "name": "Timothy Williams",
+    "age": 69,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Cirrhosis (Alcoholic). Risk factors: History of blood transfusions. Elevated ALT/AST.",
+    "study_date": "2025-09-07",
+    "image_directory": "mri/8"
+  },
+  "US-DEMO-001": {
+    "patient_id": "US-DEMO-001",
+    "name": "Billy Watkins",
+    "age": 54,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Cirrhosis (Viral Hepatitis C). Risk factors: Obesity (BMI > 30), Previous hepatitis infection. Elevated ALT/AST.",
+    "study_date": "2024-01-21",
+    "images": [
+      "ultrasound/Benign/1.jpg",
+      "ultrasound/Benign/100.jpg",
+      "ultrasound/Benign/101.jpg",
+      "ultrasound/Benign/102.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-002": {
+    "patient_id": "US-DEMO-002",
+    "name": "David Sanford",
+    "age": 59,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Hepatitis B vaccination history.",
+    "study_date": "2024-11-08",
+    "images": [
+      "ultrasound/Benign/103.jpg",
+      "ultrasound/Benign/108.jpg",
+      "ultrasound/Benign/11.jpg",
+      "ultrasound/Benign/110.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-003": {
+    "patient_id": "US-DEMO-003",
+    "name": "David Rice",
+    "age": 53,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: History of blood transfusions, Previous hepatitis infection. Elevated ALT/AST.",
+    "study_date": "2024-07-12",
+    "images": [
+      "ultrasound/Benign/111.jpg",
+      "ultrasound/Benign/112.jpg",
+      "ultrasound/Benign/113.jpg",
+      "ultrasound/Benign/115.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-004": {
+    "patient_id": "US-DEMO-004",
+    "name": "Michael Haynes",
+    "age": 66,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Cirrhosis (Viral Hepatitis C). Risk factors: Family history of liver disease. Elevated ALT/AST.",
+    "study_date": "2024-10-22",
+    "images": [
+      "ultrasound/Benign/116.jpg",
+      "ultrasound/Benign/118.jpg",
+      "ultrasound/Benign/123.jpg",
+      "ultrasound/Benign/125.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-005": {
+    "patient_id": "US-DEMO-005",
+    "name": "Jessica Perez",
+    "age": 77,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Chronic alcohol use. Elevated ALT/AST.",
+    "study_date": "2025-02-08",
+    "images": [
+      "ultrasound/Benign/126.jpg",
+      "ultrasound/Benign/128.jpg",
+      "ultrasound/Benign/129.jpg",
+      "ultrasound/Benign/13.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-006": {
+    "patient_id": "US-DEMO-006",
+    "name": "Michael Davies",
+    "age": 46,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Obesity (BMI > 30).",
+    "study_date": "2025-04-09",
+    "images": [
+      "ultrasound/Benign/131.jpg",
+      "ultrasound/Benign/132.jpg",
+      "ultrasound/Benign/133.jpg",
+      "ultrasound/Benign/137.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-007": {
+    "patient_id": "US-DEMO-007",
+    "name": "Kathleen Diaz",
+    "age": 60,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: History of blood transfusions, Type 2 Diabetes Mellitus. Elevated ALT/AST.",
+    "study_date": "2025-06-15",
+    "images": [
+      "ultrasound/Benign/138.jpg",
+      "ultrasound/Benign/139.jpg",
+      "ultrasound/Benign/14.jpg",
+      "ultrasound/Benign/140.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-008": {
+    "patient_id": "US-DEMO-008",
+    "name": "Elizabeth Anderson",
+    "age": 42,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Liver Cirrhosis (Viral Hepatitis C). Risk factors: Chronic alcohol use, Family history of liver disease. Elevated ALT/AST.",
+    "study_date": "2024-09-08",
+    "images": [
+      "ultrasound/Benign/141.jpg",
+      "ultrasound/Benign/142.jpg",
+      "ultrasound/Benign/145.jpg",
+      "ultrasound/Benign/146.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-009": {
+    "patient_id": "US-DEMO-009",
+    "name": "Kirk Jones",
+    "age": 51,
+    "gender": "Male",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Chronic alcohol use, Previous hepatitis infection. Elevated ALT/AST.",
+    "study_date": "2025-06-30",
+    "images": [
+      "ultrasound/Benign/148.jpg",
+      "ultrasound/Benign/153.jpg",
+      "ultrasound/Benign/154.jpg",
+      "ultrasound/Benign/156.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-010": {
+    "patient_id": "US-DEMO-010",
+    "name": "Joshua Randall",
+    "age": 48,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Liver Cirrhosis (Viral Hepatitis C). Risk factors: Type 2 Diabetes Mellitus. Elevated ALT/AST.",
+    "study_date": "2023-10-24",
+    "images": [
+      "ultrasound/Benign/157.jpg",
+      "ultrasound/Benign/158.jpg",
+      "ultrasound/Benign/159.jpg",
+      "ultrasound/Benign/161.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-011": {
+    "patient_id": "US-DEMO-011",
+    "name": "Danny Ortiz",
+    "age": 74,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Hepatitis B vaccination history, Previous hepatitis infection.",
+    "study_date": "2024-03-27",
+    "images": [
+      "ultrasound/Benign/164.jpg",
+      "ultrasound/Benign/165.jpg",
+      "ultrasound/Benign/168.jpg",
+      "ultrasound/Benign/17.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-012": {
+    "patient_id": "US-DEMO-012",
+    "name": "Mary Kelly",
+    "age": 48,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Family history of liver disease, Hepatitis B vaccination history.",
+    "study_date": "2024-09-12",
+    "images": [
+      "ultrasound/Benign/170.jpg",
+      "ultrasound/Benign/171.jpg",
+      "ultrasound/Benign/174.jpg",
+      "ultrasound/Benign/175.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-013": {
+    "patient_id": "US-DEMO-013",
+    "name": "Andrew Morris",
+    "age": 79,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Family history of liver disease.",
+    "study_date": "2024-06-07",
+    "images": [
+      "ultrasound/Benign/176.jpg",
+      "ultrasound/Benign/185.jpg",
+      "ultrasound/Benign/188.jpg",
+      "ultrasound/Benign/189.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-014": {
+    "patient_id": "US-DEMO-014",
+    "name": "Nicole Powell",
+    "age": 51,
+    "gender": "Female",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Obesity (BMI > 30), History of blood transfusions.",
+    "study_date": "2025-05-29",
+    "images": [
+      "ultrasound/Benign/19.jpg",
+      "ultrasound/Benign/190.jpg",
+      "ultrasound/Benign/191.jpg",
+      "ultrasound/Benign/192.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-015": {
+    "patient_id": "US-DEMO-015",
+    "name": "Julie Johnson",
+    "age": 47,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Hepatitis B vaccination history.",
+    "study_date": "2024-04-04",
+    "images": [
+      "ultrasound/Benign/193.jpg",
+      "ultrasound/Benign/194.jpg",
+      "ultrasound/Benign/195.jpg",
+      "ultrasound/Benign/198.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-016": {
+    "patient_id": "US-DEMO-016",
+    "name": "Stephen Clarke",
+    "age": 56,
+    "gender": "Male",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Type 2 Diabetes Mellitus.",
+    "study_date": "2024-11-12",
+    "images": [
+      "ultrasound/Benign/199.jpg",
+      "ultrasound/Benign/2.jpg",
+      "ultrasound/Benign/20.jpg",
+      "ultrasound/Benign/200.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-017": {
+    "patient_id": "US-DEMO-017",
+    "name": "Vincent Williams",
+    "age": 52,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Chronic alcohol use. Elevated ALT/AST.",
+    "study_date": "2025-03-22",
+    "images": [
+      "ultrasound/Benign/22.jpg",
+      "ultrasound/Benign/25.jpg",
+      "ultrasound/Benign/27.jpg",
+      "ultrasound/Benign/28.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-018": {
+    "patient_id": "US-DEMO-018",
+    "name": "Roy Blackwell",
+    "age": 73,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Chronic alcohol use, Type 2 Diabetes Mellitus.",
+    "study_date": "2025-05-29",
+    "images": [
+      "ultrasound/Benign/29.jpg",
+      "ultrasound/Benign/3.jpg",
+      "ultrasound/Benign/30.jpg",
+      "ultrasound/Benign/31.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-019": {
+    "patient_id": "US-DEMO-019",
+    "name": "Keith Williams",
+    "age": 53,
+    "gender": "Male",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Metabolic syndrome, Family history of liver disease.",
+    "study_date": "2025-09-07",
+    "images": [
+      "ultrasound/Benign/32.jpg",
+      "ultrasound/Benign/33.jpg",
+      "ultrasound/Benign/34.jpg",
+      "ultrasound/Benign/36.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-020": {
+    "patient_id": "US-DEMO-020",
+    "name": "Kimberly Watkins DVM",
+    "age": 84,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Type 2 Diabetes Mellitus. Elevated ALT/AST.",
+    "study_date": "2024-09-26",
+    "images": [
+      "ultrasound/Benign/37.jpg",
+      "ultrasound/Benign/38.jpg",
+      "ultrasound/Benign/39.jpg",
+      "ultrasound/Benign/4.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-021": {
+    "patient_id": "US-DEMO-021",
+    "name": "Christopher Henry",
+    "age": 71,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Metabolic syndrome, History of blood transfusions.",
+    "study_date": "2025-08-20",
+    "images": [
+      "ultrasound/Benign/40.jpg",
+      "ultrasound/Benign/41.jpg",
+      "ultrasound/Benign/43.jpg",
+      "ultrasound/Benign/45.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-022": {
+    "patient_id": "US-DEMO-022",
+    "name": "Tammy Robertson",
+    "age": 48,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Chronic alcohol use, Family history of liver disease. Elevated ALT/AST.",
+    "study_date": "2025-05-29",
+    "images": [
+      "ultrasound/Benign/47.jpg",
+      "ultrasound/Benign/49.jpg",
+      "ultrasound/Benign/5.jpg",
+      "ultrasound/Benign/50.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-023": {
+    "patient_id": "US-DEMO-023",
+    "name": "Morgan Haney",
+    "age": 53,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Family history of liver disease. Elevated ALT/AST.",
+    "study_date": "2024-10-06",
+    "images": [
+      "ultrasound/Benign/52.jpg",
+      "ultrasound/Benign/53.jpg",
+      "ultrasound/Benign/57.jpg",
+      "ultrasound/Benign/59.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-024": {
+    "patient_id": "US-DEMO-024",
+    "name": "Joseph Davis",
+    "age": 75,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Hepatitis B vaccination history, Previous hepatitis infection. Elevated ALT/AST.",
+    "study_date": "2025-08-13",
+    "images": [
+      "ultrasound/Benign/6.jpg",
+      "ultrasound/Benign/61.jpg",
+      "ultrasound/Benign/62.jpg",
+      "ultrasound/Benign/63.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-025": {
+    "patient_id": "US-DEMO-025",
+    "name": "Lonnie Johnson",
+    "age": 65,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Hepatitis B vaccination history, Metabolic syndrome.",
+    "study_date": "2024-05-10",
+    "images": [
+      "ultrasound/Benign/64.jpg",
+      "ultrasound/Benign/65.jpg",
+      "ultrasound/Benign/68.jpg",
+      "ultrasound/Benign/7.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-026": {
+    "patient_id": "US-DEMO-026",
+    "name": "Arthur Hanson",
+    "age": 69,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Metabolic syndrome, Family history of liver disease. Elevated ALT/AST.",
+    "study_date": "2025-07-01",
+    "images": [
+      "ultrasound/Benign/71.jpg",
+      "ultrasound/Benign/72.jpg",
+      "ultrasound/Benign/73.jpg",
+      "ultrasound/Benign/74.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-027": {
+    "patient_id": "US-DEMO-027",
+    "name": "Kaitlyn Palmer",
+    "age": 53,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Previous hepatitis infection.",
+    "study_date": "2025-02-11",
+    "images": [
+      "ultrasound/Benign/76.jpg",
+      "ultrasound/Benign/77.jpg",
+      "ultrasound/Benign/78.jpg",
+      "ultrasound/Benign/79.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-028": {
+    "patient_id": "US-DEMO-028",
+    "name": "Mrs. Debbie Solis",
+    "age": 80,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Fatty Liver Disease (NAFLD). Risk factors: Chronic alcohol use, History of blood transfusions.",
+    "study_date": "2023-10-10",
+    "images": [
+      "ultrasound/Benign/8.jpg",
+      "ultrasound/Benign/80.jpg",
+      "ultrasound/Benign/84.jpg",
+      "ultrasound/Benign/85.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-029": {
+    "patient_id": "US-DEMO-029",
+    "name": "Lisa Walsh",
+    "age": 46,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Previous hepatitis infection, Hepatitis B vaccination history. Elevated ALT/AST.",
+    "study_date": "2024-04-20",
+    "images": [
+      "ultrasound/Benign/87.jpg",
+      "ultrasound/Benign/88.jpg",
+      "ultrasound/Benign/92.jpg",
+      "ultrasound/Benign/93.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-030": {
+    "patient_id": "US-DEMO-030",
+    "name": "Julie Hodge",
+    "age": 59,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Autoimmune Hepatitis. Risk factors: Previous hepatitis infection. Elevated ALT/AST.",
+    "study_date": "2025-08-19",
+    "images": [
+      "ultrasound/Benign/94.jpg",
+      "ultrasound/Benign/95.jpg",
+      "ultrasound/Benign/96.jpg",
+      "ultrasound/Benign/98.jpg"
+    ],
+    "category": "Benign"
+  },
+  "US-DEMO-031": {
+    "patient_id": "US-DEMO-031",
+    "name": "Evelyn Freeman",
+    "age": 47,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Type 2 Diabetes Mellitus, Previous hepatitis infection. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-10-24",
+    "images": [
+      "ultrasound/Malignant/100.jpg",
+      "ultrasound/Malignant/102.jpg",
+      "ultrasound/Malignant/104.jpg",
+      "ultrasound/Malignant/105.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-032": {
+    "patient_id": "US-DEMO-032",
+    "name": "Zachary Watson",
+    "age": 54,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Hepatitis B vaccination history, Family history of liver disease.",
+    "study_date": "2024-03-03",
+    "images": [
+      "ultrasound/Malignant/106.jpg",
+      "ultrasound/Malignant/108.jpg",
+      "ultrasound/Malignant/109.jpg",
+      "ultrasound/Malignant/111.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-033": {
+    "patient_id": "US-DEMO-033",
+    "name": "Diane Mckinney",
+    "age": 66,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Obesity (BMI > 30), History of blood transfusions.",
+    "study_date": "2024-12-21",
+    "images": [
+      "ultrasound/Malignant/114.jpg",
+      "ultrasound/Malignant/115.jpg",
+      "ultrasound/Malignant/116.jpg",
+      "ultrasound/Malignant/117.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-034": {
+    "patient_id": "US-DEMO-034",
+    "name": "Taylor Ramirez",
+    "age": 48,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Metabolic syndrome, Type 2 Diabetes Mellitus.",
+    "study_date": "2024-12-26",
+    "images": [
+      "ultrasound/Malignant/118.jpg",
+      "ultrasound/Malignant/121.jpg",
+      "ultrasound/Malignant/122.jpg",
+      "ultrasound/Malignant/123.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-035": {
+    "patient_id": "US-DEMO-035",
+    "name": "Michael Munoz",
+    "age": 67,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Previous hepatitis infection.",
+    "study_date": "2024-02-27",
+    "images": [
+      "ultrasound/Malignant/125.jpg",
+      "ultrasound/Malignant/126.jpg",
+      "ultrasound/Malignant/127.jpg",
+      "ultrasound/Malignant/13.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-036": {
+    "patient_id": "US-DEMO-036",
+    "name": "Thomas Small",
+    "age": 58,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: History of blood transfusions, Previous hepatitis infection.",
+    "study_date": "2025-02-08",
+    "images": [
+      "ultrasound/Malignant/132.jpg",
+      "ultrasound/Malignant/133.jpg",
+      "ultrasound/Malignant/134.jpg",
+      "ultrasound/Malignant/136.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-037": {
+    "patient_id": "US-DEMO-037",
+    "name": "Tyler Flores",
+    "age": 46,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Obesity (BMI > 30), Chronic alcohol use.",
+    "study_date": "2024-01-11",
+    "images": [
+      "ultrasound/Malignant/137.jpg",
+      "ultrasound/Malignant/138.jpg",
+      "ultrasound/Malignant/14.jpg",
+      "ultrasound/Malignant/142.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-038": {
+    "patient_id": "US-DEMO-038",
+    "name": "Joseph Barnett",
+    "age": 50,
+    "gender": "Male",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Family history of liver disease.",
+    "study_date": "2023-11-28",
+    "images": [
+      "ultrasound/Malignant/144.jpg",
+      "ultrasound/Malignant/147.jpg",
+      "ultrasound/Malignant/149.jpg",
+      "ultrasound/Malignant/152.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-039": {
+    "patient_id": "US-DEMO-039",
+    "name": "Jennifer Goodman",
+    "age": 59,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Family history of liver disease.",
+    "study_date": "2025-09-29",
+    "images": [
+      "ultrasound/Malignant/153.jpg",
+      "ultrasound/Malignant/154.jpg",
+      "ultrasound/Malignant/155.jpg",
+      "ultrasound/Malignant/157.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-040": {
+    "patient_id": "US-DEMO-040",
+    "name": "Debra Black",
+    "age": 43,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: History of blood transfusions.",
+    "study_date": "2024-08-24",
+    "images": [
+      "ultrasound/Malignant/158.jpg",
+      "ultrasound/Malignant/159.jpg",
+      "ultrasound/Malignant/16.jpg",
+      "ultrasound/Malignant/160.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-041": {
+    "patient_id": "US-DEMO-041",
+    "name": "Joshua Medina",
+    "age": 61,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Metabolic syndrome. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-12-03",
+    "images": [
+      "ultrasound/Malignant/161.jpg",
+      "ultrasound/Malignant/164.jpg",
+      "ultrasound/Malignant/166.jpg",
+      "ultrasound/Malignant/167.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-042": {
+    "patient_id": "US-DEMO-042",
+    "name": "Brian Moore",
+    "age": 46,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Chronic alcohol use. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2023-10-07",
+    "images": [
+      "ultrasound/Malignant/168.jpg",
+      "ultrasound/Malignant/169.jpg",
+      "ultrasound/Malignant/175.jpg",
+      "ultrasound/Malignant/176.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-043": {
+    "patient_id": "US-DEMO-043",
+    "name": "Charles Barrera",
+    "age": 45,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Family history of liver disease.",
+    "study_date": "2025-05-08",
+    "images": [
+      "ultrasound/Malignant/177.jpg",
+      "ultrasound/Malignant/179.jpg",
+      "ultrasound/Malignant/18.jpg",
+      "ultrasound/Malignant/180.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-044": {
+    "patient_id": "US-DEMO-044",
+    "name": "Michele Perez",
+    "age": 38,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Previous hepatitis infection. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-01-06",
+    "images": [
+      "ultrasound/Malignant/182.jpg",
+      "ultrasound/Malignant/183.jpg",
+      "ultrasound/Malignant/184.jpg",
+      "ultrasound/Malignant/185.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-045": {
+    "patient_id": "US-DEMO-045",
+    "name": "Andrew Butler",
+    "age": 74,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Obesity (BMI > 30), Metabolic syndrome.",
+    "study_date": "2025-07-31",
+    "images": [
+      "ultrasound/Malignant/186.jpg",
+      "ultrasound/Malignant/187.jpg",
+      "ultrasound/Malignant/189.jpg",
+      "ultrasound/Malignant/19.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-046": {
+    "patient_id": "US-DEMO-046",
+    "name": "Christopher Summers",
+    "age": 72,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Previous hepatitis infection, Obesity (BMI > 30).",
+    "study_date": "2024-08-08",
+    "images": [
+      "ultrasound/Malignant/191.jpg",
+      "ultrasound/Malignant/192.jpg",
+      "ultrasound/Malignant/193.jpg",
+      "ultrasound/Malignant/194.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-047": {
+    "patient_id": "US-DEMO-047",
+    "name": "Elizabeth Thomas",
+    "age": 51,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Hepatitis B vaccination history. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-08-11",
+    "images": [
+      "ultrasound/Malignant/195.jpg",
+      "ultrasound/Malignant/198.jpg",
+      "ultrasound/Malignant/200.jpg",
+      "ultrasound/Malignant/202.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-048": {
+    "patient_id": "US-DEMO-048",
+    "name": "Monica White",
+    "age": 43,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Type 2 Diabetes Mellitus. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-02-10",
+    "images": [
+      "ultrasound/Malignant/205.jpg",
+      "ultrasound/Malignant/207.jpg",
+      "ultrasound/Malignant/208.jpg",
+      "ultrasound/Malignant/209.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-049": {
+    "patient_id": "US-DEMO-049",
+    "name": "Jessica Lee",
+    "age": 70,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Type 2 Diabetes Mellitus, Obesity (BMI > 30). Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-10-24",
+    "images": [
+      "ultrasound/Malignant/21.jpg",
+      "ultrasound/Malignant/210.jpg",
+      "ultrasound/Malignant/213.jpg",
+      "ultrasound/Malignant/215.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-050": {
+    "patient_id": "US-DEMO-050",
+    "name": "Jennifer Jimenez",
+    "age": 46,
+    "gender": "Female",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Type 2 Diabetes Mellitus, Hepatitis B vaccination history. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-07-26",
+    "images": [
+      "ultrasound/Malignant/216.jpg",
+      "ultrasound/Malignant/217.jpg",
+      "ultrasound/Malignant/218.jpg",
+      "ultrasound/Malignant/219.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-051": {
+    "patient_id": "US-DEMO-051",
+    "name": "Denise Carter",
+    "age": 62,
+    "gender": "Female",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Hepatitis B vaccination history, Chronic alcohol use.",
+    "study_date": "2025-01-04",
+    "images": [
+      "ultrasound/Malignant/224.jpg",
+      "ultrasound/Malignant/226.jpg",
+      "ultrasound/Malignant/228.jpg",
+      "ultrasound/Malignant/229.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-052": {
+    "patient_id": "US-DEMO-052",
+    "name": "Kristi Edwards",
+    "age": 64,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Family history of liver disease.",
+    "study_date": "2025-05-17",
+    "images": [
+      "ultrasound/Malignant/23.jpg",
+      "ultrasound/Malignant/230.jpg",
+      "ultrasound/Malignant/231.jpg",
+      "ultrasound/Malignant/233.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-053": {
+    "patient_id": "US-DEMO-053",
+    "name": "Nicholas Moore",
+    "age": 58,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Type 2 Diabetes Mellitus.",
+    "study_date": "2023-12-11",
+    "images": [
+      "ultrasound/Malignant/235.jpg",
+      "ultrasound/Malignant/237.jpg",
+      "ultrasound/Malignant/238.jpg",
+      "ultrasound/Malignant/239.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-054": {
+    "patient_id": "US-DEMO-054",
+    "name": "Jennifer Moon",
+    "age": 49,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Hepatitis B vaccination history, Obesity (BMI > 30).",
+    "study_date": "2024-11-13",
+    "images": [
+      "ultrasound/Malignant/24.jpg",
+      "ultrasound/Malignant/240.jpg",
+      "ultrasound/Malignant/241.jpg",
+      "ultrasound/Malignant/242.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-055": {
+    "patient_id": "US-DEMO-055",
+    "name": "Emily Mccarthy",
+    "age": 61,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Metabolic syndrome, Hepatitis B vaccination history.",
+    "study_date": "2024-12-14",
+    "images": [
+      "ultrasound/Malignant/243.jpg",
+      "ultrasound/Malignant/245.jpg",
+      "ultrasound/Malignant/246.jpg",
+      "ultrasound/Malignant/247.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-056": {
+    "patient_id": "US-DEMO-056",
+    "name": "Ryan Mcdaniel",
+    "age": 38,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Hepatitis B vaccination history.",
+    "study_date": "2023-10-11",
+    "images": [
+      "ultrasound/Malignant/25.jpg",
+      "ultrasound/Malignant/250.jpg",
+      "ultrasound/Malignant/251.jpg",
+      "ultrasound/Malignant/252.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-057": {
+    "patient_id": "US-DEMO-057",
+    "name": "Andrew Myers",
+    "age": 46,
+    "gender": "Male",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Metabolic syndrome, Obesity (BMI > 30).",
+    "study_date": "2025-05-06",
+    "images": [
+      "ultrasound/Malignant/253.jpg",
+      "ultrasound/Malignant/255.jpg",
+      "ultrasound/Malignant/257.jpg",
+      "ultrasound/Malignant/259.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-058": {
+    "patient_id": "US-DEMO-058",
+    "name": "Aaron Calhoun",
+    "age": 50,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease, Hepatitis B vaccination history. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-08-16",
+    "images": [
+      "ultrasound/Malignant/26.jpg",
+      "ultrasound/Malignant/260.jpg",
+      "ultrasound/Malignant/261.jpg",
+      "ultrasound/Malignant/263.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-059": {
+    "patient_id": "US-DEMO-059",
+    "name": "Richard Clark",
+    "age": 67,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease, Chronic alcohol use. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-01-31",
+    "images": [
+      "ultrasound/Malignant/265.jpg",
+      "ultrasound/Malignant/268.jpg",
+      "ultrasound/Malignant/269.jpg",
+      "ultrasound/Malignant/270.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-060": {
+    "patient_id": "US-DEMO-060",
+    "name": "Christian Grant",
+    "age": 53,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease, History of blood transfusions. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-09-25",
+    "images": [
+      "ultrasound/Malignant/272.jpg",
+      "ultrasound/Malignant/276.jpg",
+      "ultrasound/Malignant/278.jpg",
+      "ultrasound/Malignant/279.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-061": {
+    "patient_id": "US-DEMO-061",
+    "name": "Loretta Wade",
+    "age": 56,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Type 2 Diabetes Mellitus, History of blood transfusions.",
+    "study_date": "2025-09-01",
+    "images": [
+      "ultrasound/Malignant/28.jpg",
+      "ultrasound/Malignant/280.jpg",
+      "ultrasound/Malignant/282.jpg",
+      "ultrasound/Malignant/285.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-062": {
+    "patient_id": "US-DEMO-062",
+    "name": "Jennifer Adams",
+    "age": 74,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: History of blood transfusions.",
+    "study_date": "2024-09-02",
+    "images": [
+      "ultrasound/Malignant/286.jpg",
+      "ultrasound/Malignant/287.jpg",
+      "ultrasound/Malignant/288.jpg",
+      "ultrasound/Malignant/289.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-063": {
+    "patient_id": "US-DEMO-063",
+    "name": "Daniel Ramirez",
+    "age": 55,
+    "gender": "Male",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Previous hepatitis infection, Hepatitis B vaccination history. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-09-03",
+    "images": [
+      "ultrasound/Malignant/29.jpg",
+      "ultrasound/Malignant/290.jpg",
+      "ultrasound/Malignant/291.jpg",
+      "ultrasound/Malignant/293.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-064": {
+    "patient_id": "US-DEMO-064",
+    "name": "Sharon Garner",
+    "age": 53,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Previous hepatitis infection, Metabolic syndrome.",
+    "study_date": "2024-04-06",
+    "images": [
+      "ultrasound/Malignant/295.jpg",
+      "ultrasound/Malignant/296.jpg",
+      "ultrasound/Malignant/298.jpg",
+      "ultrasound/Malignant/299.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-065": {
+    "patient_id": "US-DEMO-065",
+    "name": "Juan Jones",
+    "age": 69,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Obesity (BMI > 30), Hepatitis B vaccination history. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-04-25",
+    "images": [
+      "ultrasound/Malignant/30.jpg",
+      "ultrasound/Malignant/300.jpg",
+      "ultrasound/Malignant/301.jpg",
+      "ultrasound/Malignant/302.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-066": {
+    "patient_id": "US-DEMO-066",
+    "name": "Zachary Brown",
+    "age": 69,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Metabolic syndrome. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2023-12-17",
+    "images": [
+      "ultrasound/Malignant/303.jpg",
+      "ultrasound/Malignant/304.jpg",
+      "ultrasound/Malignant/306.jpg",
+      "ultrasound/Malignant/307.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-067": {
+    "patient_id": "US-DEMO-067",
+    "name": "Nicole Jones",
+    "age": 62,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: History of blood transfusions. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-09-19",
+    "images": [
+      "ultrasound/Malignant/309.jpg",
+      "ultrasound/Malignant/312.jpg",
+      "ultrasound/Malignant/313.jpg",
+      "ultrasound/Malignant/315.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-068": {
+    "patient_id": "US-DEMO-068",
+    "name": "Emily Brown",
+    "age": 67,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-05-29",
+    "images": [
+      "ultrasound/Malignant/316.jpg",
+      "ultrasound/Malignant/317.jpg",
+      "ultrasound/Malignant/318.jpg",
+      "ultrasound/Malignant/319.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-069": {
+    "patient_id": "US-DEMO-069",
+    "name": "Patrick Brewer",
+    "age": 65,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Metabolic syndrome. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-08-24",
+    "images": [
+      "ultrasound/Malignant/32.jpg",
+      "ultrasound/Malignant/320.jpg",
+      "ultrasound/Malignant/321.jpg",
+      "ultrasound/Malignant/322.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-070": {
+    "patient_id": "US-DEMO-070",
+    "name": "Brandon Stevenson",
+    "age": 36,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Previous hepatitis infection, Chronic alcohol use. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-08-21",
+    "images": [
+      "ultrasound/Malignant/323.jpg",
+      "ultrasound/Malignant/325.jpg",
+      "ultrasound/Malignant/327.jpg",
+      "ultrasound/Malignant/328.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-071": {
+    "patient_id": "US-DEMO-071",
+    "name": "Alexander Campbell",
+    "age": 66,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Hepatitis B vaccination history.",
+    "study_date": "2025-06-27",
+    "images": [
+      "ultrasound/Malignant/330.jpg",
+      "ultrasound/Malignant/334.jpg",
+      "ultrasound/Malignant/335.jpg",
+      "ultrasound/Malignant/336.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-072": {
+    "patient_id": "US-DEMO-072",
+    "name": "Zachary Smith",
+    "age": 69,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease, Hepatitis B vaccination history. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-11-02",
+    "images": [
+      "ultrasound/Malignant/337.jpg",
+      "ultrasound/Malignant/338.jpg",
+      "ultrasound/Malignant/339.jpg",
+      "ultrasound/Malignant/34.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-073": {
+    "patient_id": "US-DEMO-073",
+    "name": "Andrew Mooney",
+    "age": 74,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Previous hepatitis infection, Family history of liver disease.",
+    "study_date": "2025-04-11",
+    "images": [
+      "ultrasound/Malignant/340.jpg",
+      "ultrasound/Malignant/341.jpg",
+      "ultrasound/Malignant/343.jpg",
+      "ultrasound/Malignant/344.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-074": {
+    "patient_id": "US-DEMO-074",
+    "name": "Nicole Kennedy",
+    "age": 52,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: History of blood transfusions.",
+    "study_date": "2024-11-05",
+    "images": [
+      "ultrasound/Malignant/348.jpg",
+      "ultrasound/Malignant/349.jpg",
+      "ultrasound/Malignant/35.jpg",
+      "ultrasound/Malignant/351.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-075": {
+    "patient_id": "US-DEMO-075",
+    "name": "Teresa Mcbride",
+    "age": 74,
+    "gender": "Female",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Type 2 Diabetes Mellitus, History of blood transfusions.",
+    "study_date": "2025-07-14",
+    "images": [
+      "ultrasound/Malignant/352.jpg",
+      "ultrasound/Malignant/355.jpg",
+      "ultrasound/Malignant/359.jpg",
+      "ultrasound/Malignant/361.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-076": {
+    "patient_id": "US-DEMO-076",
+    "name": "Jamie Crawford",
+    "age": 54,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: History of blood transfusions.",
+    "study_date": "2024-10-06",
+    "images": [
+      "ultrasound/Malignant/362.jpg",
+      "ultrasound/Malignant/363.jpg",
+      "ultrasound/Malignant/364.jpg",
+      "ultrasound/Malignant/366.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-077": {
+    "patient_id": "US-DEMO-077",
+    "name": "Vanessa Hamilton",
+    "age": 77,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Obesity (BMI > 30), Family history of liver disease.",
+    "study_date": "2024-09-11",
+    "images": [
+      "ultrasound/Malignant/367.jpg",
+      "ultrasound/Malignant/37.jpg",
+      "ultrasound/Malignant/372.jpg",
+      "ultrasound/Malignant/373.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-078": {
+    "patient_id": "US-DEMO-078",
+    "name": "Kim Graham",
+    "age": 72,
+    "gender": "Female",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Obesity (BMI > 30).",
+    "study_date": "2025-06-08",
+    "images": [
+      "ultrasound/Malignant/374.jpg",
+      "ultrasound/Malignant/376.jpg",
+      "ultrasound/Malignant/379.jpg",
+      "ultrasound/Malignant/380.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-079": {
+    "patient_id": "US-DEMO-079",
+    "name": "Margaret Ford",
+    "age": 57,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: History of blood transfusions.",
+    "study_date": "2024-12-21",
+    "images": [
+      "ultrasound/Malignant/381.jpg",
+      "ultrasound/Malignant/382.jpg",
+      "ultrasound/Malignant/383.jpg",
+      "ultrasound/Malignant/385.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-080": {
+    "patient_id": "US-DEMO-080",
+    "name": "Anthony Malone",
+    "age": 71,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: History of blood transfusions, Metabolic syndrome. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2023-11-07",
+    "images": [
+      "ultrasound/Malignant/386.jpg",
+      "ultrasound/Malignant/387.jpg",
+      "ultrasound/Malignant/388.jpg",
+      "ultrasound/Malignant/39.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-081": {
+    "patient_id": "US-DEMO-081",
+    "name": "David Williams",
+    "age": 57,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Type 2 Diabetes Mellitus. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-01-15",
+    "images": [
+      "ultrasound/Malignant/390.jpg",
+      "ultrasound/Malignant/393.jpg",
+      "ultrasound/Malignant/396.jpg",
+      "ultrasound/Malignant/397.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-082": {
+    "patient_id": "US-DEMO-082",
+    "name": "Robert Gross",
+    "age": 74,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease, Obesity (BMI > 30). Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-03-24",
+    "images": [
+      "ultrasound/Malignant/40.jpg",
+      "ultrasound/Malignant/400.jpg",
+      "ultrasound/Malignant/401.jpg",
+      "ultrasound/Malignant/402.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-083": {
+    "patient_id": "US-DEMO-083",
+    "name": "Christopher Carter",
+    "age": 61,
+    "gender": "Male",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Metabolic syndrome.",
+    "study_date": "2025-08-09",
+    "images": [
+      "ultrasound/Malignant/404.jpg",
+      "ultrasound/Malignant/405.jpg",
+      "ultrasound/Malignant/406.jpg",
+      "ultrasound/Malignant/407.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-084": {
+    "patient_id": "US-DEMO-084",
+    "name": "Thomas Davis",
+    "age": 78,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Obesity (BMI > 30), Chronic alcohol use. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-03-02",
+    "images": [
+      "ultrasound/Malignant/41.jpg",
+      "ultrasound/Malignant/412.jpg",
+      "ultrasound/Malignant/413.jpg",
+      "ultrasound/Malignant/414.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-085": {
+    "patient_id": "US-DEMO-085",
+    "name": "Julie Simmons",
+    "age": 46,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Metabolic syndrome, Hepatitis B vaccination history.",
+    "study_date": "2025-05-09",
+    "images": [
+      "ultrasound/Malignant/415.jpg",
+      "ultrasound/Malignant/417.jpg",
+      "ultrasound/Malignant/42.jpg",
+      "ultrasound/Malignant/421.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-086": {
+    "patient_id": "US-DEMO-086",
+    "name": "Samantha Mccoy",
+    "age": 70,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Chronic alcohol use, Metabolic syndrome.",
+    "study_date": "2024-09-26",
+    "images": [
+      "ultrasound/Malignant/424.jpg",
+      "ultrasound/Malignant/425.jpg",
+      "ultrasound/Malignant/426.jpg",
+      "ultrasound/Malignant/427.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-087": {
+    "patient_id": "US-DEMO-087",
+    "name": "Brian Jacobs",
+    "age": 53,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Metabolic syndrome.",
+    "study_date": "2025-05-24",
+    "images": [
+      "ultrasound/Malignant/428.jpg",
+      "ultrasound/Malignant/43.jpg",
+      "ultrasound/Malignant/430.jpg",
+      "ultrasound/Malignant/432.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-088": {
+    "patient_id": "US-DEMO-088",
+    "name": "Shelby Thompson",
+    "age": 37,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Chronic alcohol use. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2023-10-24",
+    "images": [
+      "ultrasound/Malignant/433.jpg",
+      "ultrasound/Malignant/45.jpg",
+      "ultrasound/Malignant/46.jpg",
+      "ultrasound/Malignant/48.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-089": {
+    "patient_id": "US-DEMO-089",
+    "name": "Julie Miles",
+    "age": 55,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Obesity (BMI > 30).",
+    "study_date": "2024-10-12",
+    "images": [
+      "ultrasound/Malignant/5.jpg",
+      "ultrasound/Malignant/51.jpg",
+      "ultrasound/Malignant/52.jpg",
+      "ultrasound/Malignant/53.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-090": {
+    "patient_id": "US-DEMO-090",
+    "name": "Ruth Hicks",
+    "age": 49,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease, Obesity (BMI > 30). Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-07-02",
+    "images": [
+      "ultrasound/Malignant/54.jpg",
+      "ultrasound/Malignant/56.jpg",
+      "ultrasound/Malignant/58.jpg",
+      "ultrasound/Malignant/6.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-091": {
+    "patient_id": "US-DEMO-091",
+    "name": "Blake Prince",
+    "age": 50,
+    "gender": "Male",
+    "ethnicity": "Native American",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Type 2 Diabetes Mellitus, Previous hepatitis infection.",
+    "study_date": "2025-09-04",
+    "images": [
+      "ultrasound/Malignant/60.jpg",
+      "ultrasound/Malignant/66.jpg",
+      "ultrasound/Malignant/67.jpg",
+      "ultrasound/Malignant/69.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-092": {
+    "patient_id": "US-DEMO-092",
+    "name": "Darrell Cameron",
+    "age": 49,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Metabolic syndrome, Previous hepatitis infection.",
+    "study_date": "2025-08-14",
+    "images": [
+      "ultrasound/Malignant/7.jpg",
+      "ultrasound/Malignant/71.jpg",
+      "ultrasound/Malignant/72.jpg",
+      "ultrasound/Malignant/73.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-093": {
+    "patient_id": "US-DEMO-093",
+    "name": "Jennifer Roberts",
+    "age": 48,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: History of blood transfusions, Obesity (BMI > 30). Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-04-09",
+    "images": [
+      "ultrasound/Malignant/74.jpg",
+      "ultrasound/Malignant/75.jpg",
+      "ultrasound/Malignant/78.jpg",
+      "ultrasound/Malignant/8.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-094": {
+    "patient_id": "US-DEMO-094",
+    "name": "Hannah Hall",
+    "age": 42,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: History of blood transfusions. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2024-02-29",
+    "images": [
+      "ultrasound/Malignant/81.jpg",
+      "ultrasound/Malignant/83.jpg",
+      "ultrasound/Malignant/86.jpg",
+      "ultrasound/Malignant/87.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-095": {
+    "patient_id": "US-DEMO-095",
+    "name": "Stephanie Pratt",
+    "age": 48,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "Hepatocellular Carcinoma (HCC). Risk factors: Family history of liver disease, History of blood transfusions. Elevated AFP (Alpha-fetoprotein).",
+    "study_date": "2025-09-07",
+    "images": [
+      "ultrasound/Malignant/89.jpg",
+      "ultrasound/Malignant/9.jpg",
+      "ultrasound/Malignant/93.jpg",
+      "ultrasound/Malignant/95.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-096": {
+    "patient_id": "US-DEMO-096",
+    "name": "Brian Guerra",
+    "age": 75,
+    "gender": "Male",
+    "ethnicity": "Mixed",
+    "medical_background": "Liver Metastases (Colorectal origin). Risk factors: Family history of liver disease.",
+    "study_date": "2025-01-17",
+    "images": [
+      "ultrasound/Malignant/97.jpg"
+    ],
+    "category": "Malignant"
+  },
+  "US-DEMO-097": {
+    "patient_id": "US-DEMO-097",
+    "name": "Jennifer Mccann",
+    "age": 53,
+    "gender": "Female",
+    "ethnicity": "Caucasian",
+    "medical_background": "No significant liver pathology. Risk factors: Chronic alcohol use.",
+    "study_date": "2024-03-20",
+    "images": [
+      "ultrasound/Normal/10.jpg",
+      "ultrasound/Normal/100.jpg",
+      "ultrasound/Normal/15.jpg",
+      "ultrasound/Normal/16.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-098": {
+    "patient_id": "US-DEMO-098",
+    "name": "Katie Alvarez",
+    "age": 77,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "No significant liver pathology. Risk factors: Chronic alcohol use, Obesity (BMI > 30).",
+    "study_date": "2023-10-24",
+    "images": [
+      "ultrasound/Normal/17.jpg",
+      "ultrasound/Normal/18.jpg",
+      "ultrasound/Normal/2.jpg",
+      "ultrasound/Normal/22.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-099": {
+    "patient_id": "US-DEMO-099",
+    "name": "Jasmin Mayo",
+    "age": 60,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "No significant liver pathology. Risk factors: History of blood transfusions.",
+    "study_date": "2025-06-07",
+    "images": [
+      "ultrasound/Normal/23.jpg",
+      "ultrasound/Normal/25.jpg",
+      "ultrasound/Normal/28.jpg",
+      "ultrasound/Normal/29.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-100": {
+    "patient_id": "US-DEMO-100",
+    "name": "Billy Garcia",
+    "age": 77,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "No significant liver pathology. Risk factors: Type 2 Diabetes Mellitus, Previous hepatitis infection.",
+    "study_date": "2024-10-03",
+    "images": [
+      "ultrasound/Normal/3.jpg",
+      "ultrasound/Normal/32.jpg",
+      "ultrasound/Normal/36.jpg",
+      "ultrasound/Normal/38.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-101": {
+    "patient_id": "US-DEMO-101",
+    "name": "Jennifer Smith",
+    "age": 38,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "No significant liver pathology. Risk factors: Chronic alcohol use.",
+    "study_date": "2024-07-30",
+    "images": [
+      "ultrasound/Normal/39.jpg",
+      "ultrasound/Normal/4.jpg",
+      "ultrasound/Normal/41.jpg",
+      "ultrasound/Normal/42.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-102": {
+    "patient_id": "US-DEMO-102",
+    "name": "Gina Marshall",
+    "age": 51,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "No significant liver pathology. Risk factors: History of blood transfusions, Type 2 Diabetes Mellitus.",
+    "study_date": "2025-06-09",
+    "images": [
+      "ultrasound/Normal/43.jpg",
+      "ultrasound/Normal/44.jpg",
+      "ultrasound/Normal/45.jpg",
+      "ultrasound/Normal/46.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-103": {
+    "patient_id": "US-DEMO-103",
+    "name": "Natalie Barnes",
+    "age": 35,
+    "gender": "Female",
+    "ethnicity": "Asian",
+    "medical_background": "No significant liver pathology. Risk factors: Type 2 Diabetes Mellitus, Obesity (BMI > 30).",
+    "study_date": "2025-08-08",
+    "images": [
+      "ultrasound/Normal/47.jpg",
+      "ultrasound/Normal/49.jpg",
+      "ultrasound/Normal/5.jpg",
+      "ultrasound/Normal/50.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-104": {
+    "patient_id": "US-DEMO-104",
+    "name": "Karen Clark",
+    "age": 51,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "No significant liver pathology. Risk factors: Hepatitis B vaccination history, Family history of liver disease.",
+    "study_date": "2024-11-01",
+    "images": [
+      "ultrasound/Normal/51.jpg",
+      "ultrasound/Normal/52.jpg",
+      "ultrasound/Normal/53.jpg",
+      "ultrasound/Normal/54.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-105": {
+    "patient_id": "US-DEMO-105",
+    "name": "Noah Weber",
+    "age": 57,
+    "gender": "Male",
+    "ethnicity": "Asian",
+    "medical_background": "No significant liver pathology. Risk factors: Obesity (BMI > 30).",
+    "study_date": "2023-10-10",
+    "images": [
+      "ultrasound/Normal/55.jpg",
+      "ultrasound/Normal/56.jpg",
+      "ultrasound/Normal/59.jpg",
+      "ultrasound/Normal/6.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-106": {
+    "patient_id": "US-DEMO-106",
+    "name": "Travis Clark",
+    "age": 47,
+    "gender": "Male",
+    "ethnicity": "Hispanic/Latino",
+    "medical_background": "No significant liver pathology. Risk factors: Hepatitis B vaccination history.",
+    "study_date": "2025-04-08",
+    "images": [
+      "ultrasound/Normal/61.jpg",
+      "ultrasound/Normal/62.jpg",
+      "ultrasound/Normal/63.jpg",
+      "ultrasound/Normal/64.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-107": {
+    "patient_id": "US-DEMO-107",
+    "name": "Mrs. Beth Macias",
+    "age": 81,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "No significant liver pathology. Risk factors: Obesity (BMI > 30).",
+    "study_date": "2024-02-04",
+    "images": [
+      "ultrasound/Normal/65.jpg",
+      "ultrasound/Normal/66.jpg",
+      "ultrasound/Normal/68.jpg",
+      "ultrasound/Normal/69.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-108": {
+    "patient_id": "US-DEMO-108",
+    "name": "Shannon Ramirez",
+    "age": 61,
+    "gender": "Female",
+    "ethnicity": "Native American",
+    "medical_background": "No significant liver pathology. Risk factors: Type 2 Diabetes Mellitus, History of blood transfusions.",
+    "study_date": "2023-12-04",
+    "images": [
+      "ultrasound/Normal/70.jpg",
+      "ultrasound/Normal/72.jpg",
+      "ultrasound/Normal/74.jpg",
+      "ultrasound/Normal/75.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-109": {
+    "patient_id": "US-DEMO-109",
+    "name": "Kevin Jenkins",
+    "age": 48,
+    "gender": "Male",
+    "ethnicity": "Caucasian",
+    "medical_background": "No significant liver pathology. Risk factors: Type 2 Diabetes Mellitus, Obesity (BMI > 30).",
+    "study_date": "2025-06-22",
+    "images": [
+      "ultrasound/Normal/76.jpg",
+      "ultrasound/Normal/78.jpg",
+      "ultrasound/Normal/8.jpg",
+      "ultrasound/Normal/81.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-110": {
+    "patient_id": "US-DEMO-110",
+    "name": "Stephanie Bennett",
+    "age": 52,
+    "gender": "Female",
+    "ethnicity": "African American",
+    "medical_background": "No significant liver pathology. Risk factors: Type 2 Diabetes Mellitus.",
+    "study_date": "2023-12-07",
+    "images": [
+      "ultrasound/Normal/84.jpg",
+      "ultrasound/Normal/86.jpg",
+      "ultrasound/Normal/88.jpg",
+      "ultrasound/Normal/91.jpg"
+    ],
+    "category": "Normal"
+  },
+  "US-DEMO-111": {
+    "patient_id": "US-DEMO-111",
+    "name": "Kara Morris",
+    "age": 49,
+    "gender": "Female",
+    "ethnicity": "Mixed",
+    "medical_background": "No significant liver pathology. Risk factors: Family history of liver disease, History of blood transfusions.",
+    "study_date": "2025-04-26",
+    "images": [
+      "ultrasound/Normal/92.jpg",
+      "ultrasound/Normal/96.jpg",
+      "ultrasound/Normal/98.jpg",
+      "ultrasound/Normal/99.jpg"
+    ],
+    "category": "Normal"
+  }
+}

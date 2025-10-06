@@ -48,10 +48,12 @@ interface AnalysisResult {
   }
   demographics?: {
     patient_id: string
+    name?: string
     age: number
     gender: string
     ethnicity: string
     study_date: string
+    medical_background?: string
   }
 }
 
@@ -60,6 +62,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState<Page>('landing')
   const [selectedModality, setSelectedModality] = useState('liver-mri')
   const [uploadedImage, setUploadedImage] = useState<string | null>(null)
+  const [demoPatientData, setDemoPatientData] = useState<AnalysisResult['demographics'] | null>(null)
   const [processing, setProcessing] = useState(false)
   const [analysisStep, setAnalysisStep] = useState(0)
   const [results, setResults] = useState<AnalysisResult | null>(null)
@@ -112,6 +115,7 @@ function App() {
       const reader = new FileReader()
       reader.onload = (e) => {
         setUploadedImage(e.target?.result as string)
+        setDemoPatientData(null)
         setResults(null)
         setActiveTab('analyze')
       }
@@ -133,6 +137,7 @@ function App() {
       console.log('Backend returned imageUrl:', data.imageUrl?.substring(0, 100))
       if (data.success) {
         setUploadedImage(data.imageUrl)
+        setDemoPatientData(data.patientData || null)
         setResults(null)
         setActiveTab('analyze')
       }
@@ -375,6 +380,45 @@ function App() {
                       className="max-w-full h-auto rounded-lg mx-auto"
                       style={{ maxHeight: '300px' }}
                     />
+                  </div>
+                )}
+
+                {demoPatientData && (
+                  <div className="my-6">
+                    <h3 className={`text-lg font-semibold mb-4 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                      Patient Information
+                    </h3>
+                    <div className={`p-6 rounded-xl ${
+                      darkMode ? 'bg-slate-800' : 'bg-white'
+                    } border ${darkMode ? 'border-slate-700' : 'border-gray-200'}`}>
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <DemoField 
+                          label="Patient Name" 
+                          value={demoPatientData.name || 'N/A'} 
+                          darkMode={darkMode} 
+                        />
+                        <DemoField 
+                          label="Age" 
+                          value={`${demoPatientData.age} years`} 
+                          darkMode={darkMode} 
+                        />
+                        <DemoField 
+                          label="Gender" 
+                          value={demoPatientData.gender} 
+                          darkMode={darkMode} 
+                        />
+                      </div>
+                      {demoPatientData.medical_background && (
+                        <div className="mt-4 pt-4 border-t border-slate-600">
+                          <p className={`text-sm mb-1 ${darkMode ? 'text-gray-400' : 'text-slate-600'}`}>
+                            Medical Background
+                          </p>
+                          <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-slate-700'}`}>
+                            {demoPatientData.medical_background}
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
 
