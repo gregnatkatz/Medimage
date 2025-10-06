@@ -1,5 +1,3 @@
-import SpinningLiver from './SpinningLiver'
-
 interface LandingPageProps {
   darkMode: boolean
   onEnter: () => void
@@ -31,7 +29,11 @@ export default function LandingPage({ darkMode, onEnter }: LandingPageProps) {
       </p>
 
       <div className="mb-12">
-        <SpinningLiver darkMode={darkMode} />
+        <img 
+          src="/Liver_03_animation.gif" 
+          alt="3D Rotating Liver Model" 
+          className="w-[400px] h-[400px] rounded-xl border-4 border-blue-500/40 shadow-2xl"
+        />
       </div>
 
       <div className={`max-w-4xl mb-12 p-8 rounded-xl shadow-xl ${
