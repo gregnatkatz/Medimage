@@ -34,38 +34,39 @@ export default function LandingPage({ darkMode, onEnter }: LandingPageProps) {
         <SpinningLiver darkMode={darkMode} />
       </div>
 
-      <div className={`max-w-3xl mb-12 p-8 rounded-xl ${
-        darkMode ? 'bg-slate-800/50' : 'bg-white/50'
-      } backdrop-blur-sm border ${
-        darkMode ? 'border-blue-500/30' : 'border-blue-200'
+      <div className={`max-w-4xl mb-12 p-8 rounded-xl shadow-xl ${
+        darkMode ? 'bg-slate-800/70' : 'bg-white/70'
+      } backdrop-blur-md border-2 ${
+        darkMode ? 'border-blue-500/40' : 'border-blue-300'
       }`}>
-        <h2 className={`text-2xl font-semibold mb-4 ${
+        <h2 className={`text-3xl font-bold mb-6 ${
           darkMode ? 'text-white' : 'text-slate-900'
         }`}>
           Executive Summary
         </h2>
-        <div className={`space-y-3 ${
+        <div className={`space-y-4 text-left ${
           darkMode ? 'text-gray-300' : 'text-slate-700'
         }`}>
-          <p>
+          <p className="text-lg leading-relaxed">
             This demonstration platform showcases advanced AI capabilities for liver disease 
             detection and analysis using Microsoft Azure AI Foundry services integrated with 
             state-of-the-art medical imaging models.
           </p>
-          <p>
-            <strong>Key Features:</strong>
+          <p className="font-semibold text-lg">
+            Key Features:
           </p>
-          <ul className="list-disc list-inside space-y-2 ml-4">
+          <ul className="list-disc list-inside space-y-2 ml-4 text-base">
             <li>Multi-modal liver imaging analysis (MRI, CT, Ultrasound)</li>
-            <li>Advanced tumor detection and segmentation using BiomedParse and MedImageParse</li>
+            <li>Advanced tumor detection and segmentation using MedImageParse and MedImageInsight</li>
             <li>Interactive 3D visualization of liver structures</li>
-            <li>Comprehensive analytics dashboard with accuracy metrics</li>
-            <li>Patient demographics integration from Kaggle medical datasets</li>
-            <li>Real-time AI-powered clinical insights via GPT-5</li>
+            <li>Comprehensive analytics dashboard with clinical metrics</li>
+            <li>Patient demographics integration from medical datasets</li>
+            <li>Real-time AI-powered clinical insights via Azure OpenAI GPT-4.1</li>
+            <li>Rich testing capabilities inspired by Stanford MedAI research</li>
           </ul>
-          <p>
+          <p className="text-base">
             <strong>Dataset:</strong> 1000+ liver disease images from Kaggle medical imaging datasets, 
-            including 3D Liver Tumor Segmentation and CHAOS challenge data.
+            organized into demo (60%) and live testing (40%) splits, including CT, MRI, and ultrasound modalities.
           </p>
         </div>
       </div>
