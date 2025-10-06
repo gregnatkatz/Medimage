@@ -182,6 +182,15 @@ def main():
     print("=" * 70)
     print("Azure ML Medical Imaging Models - Multi-Deployment Setup")
     print("=" * 70)
+    
+    if not API_KEY:
+        print("\n❌ Error: AZURE_ML_API_KEY environment variable not set")
+        print("\nPlease set the required environment variables:")
+        print("  export AZURE_ML_ENDPOINT_NAME='medparse101-gnk'")
+        print("  export AZURE_ML_ENDPOINT='https://medparse101-gnk.eastus2.inference.ml.azure.com/score'")
+        print("  export AZURE_ML_API_KEY='your-api-key-here'")
+        return
+    
     print(f"\n🎯 Endpoint: {ENDPOINT_NAME}")
     print(f"🌐 URI: {ENDPOINT_URI}")
     print(f"🔑 API Key: {'*' * 40}...{API_KEY[-10:]}")

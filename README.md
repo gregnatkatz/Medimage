@@ -227,34 +227,61 @@ MEDIMAGEINSIGHT_DEPLOYMENT=medimageinsight-deployment
 MEDIMAGEPARSE3D_DEPLOYMENT=medimageparse3d
 ```
 
-## 🚀 Switching to Real Azure AI Endpoints
+## 🚀 Deploying Medical Imaging Models to Azure
 
-Once the Azure ML endpoint is fully deployed, switch from mock to real endpoints:
+### Option 1: Deploy via Azure ML Endpoint
 
-1. **Run the deployment script** (wait for confirmation that endpoint is ready):
+1. **Set environment variables** with your Azure credentials:
+```bash
+export AZURE_ML_ENDPOINT_NAME="medparse101-gnk"
+export AZURE_ML_ENDPOINT="https://medparse101-gnk.eastus2.inference.ml.azure.com/score"
+export AZURE_ML_API_KEY="your-api-key-here"
+```
+
+2. **Run the deployment script**:
 ```bash
 python deploy_medical_models.py
 ```
 
-2. **Update backend/.env**:
+### Option 2: Deploy via Azure AI Foundry
+
+1. **Set environment variables**:
+```bash
+export FOUNDRY_ENDPOINT="https://your-foundry-endpoint.services.ai.azure.com"
+export FOUNDRY_API_KEY="your-foundry-api-key"
+export AZURE_ML_ENDPOINT_NAME="medparse101-gnk"
+export AZURE_ML_ENDPOINT="https://medparse101-gnk.eastus2.inference.ml.azure.com/score"
+export AZURE_ML_API_KEY="your-ml-api-key"
+```
+
+2. **Run the deployment script**:
+```bash
+python deploy_medical_models_foundry.py
+```
+
+## 🔄 Switching to Real Azure AI Endpoints
+
+Once the Azure ML endpoint is fully deployed, switch from mock to real endpoints:
+
+1. **Update backend/.env**:
 ```bash
 USE_MOCK_DATA=false
 ```
 
-3. **Restart the backend**:
+2. **Restart the backend**:
 ```bash
 cd backend
 poetry run fastapi dev app/main.py
 ```
 
-4. **Verify real endpoint is active**:
+3. **Verify real endpoint is active**:
 ```bash
 curl http://localhost:8000/healthz
 ```
 
 Expected response should show `"mode": "production"` instead of `"mode": "mock"`.
 
-5. **Test with real medical imaging analysis** by uploading images through the frontend.
+4. **Test with real medical imaging analysis** by uploading images through the frontend.
 
 
     ↓
